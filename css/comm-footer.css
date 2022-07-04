@@ -1,0 +1,74 @@
+#ft {
+  border-top: 3px solid #ffe600;
+  padding-top: 24px;
+  margin-top: 90px;
+
+  text-align: center;
+  font-size: 15px;
+  font-weight: 200;
+}
+#ft .logo img {
+  width: 183px;
+  margin-bottom: 30px;
+}
+#ft .infor {
+  margin: 20px 0;
+}
+#ft .infor p {
+  padding-bottom: 10px;
+}
+#ft .infor p span {
+  padding: 0 20px;
+}
+#ft .infor p span::after {
+  content: "|";
+  display: inline-block;
+  font-size: 10px;
+  position: relative;
+  top: -2px;
+  left: 20px;
+}
+#ft .infor p span:last-child:after {
+  display: none;
+}
+#ft .inner {
+  position: relative;
+}
+.familySte {
+  width: 175px;
+  font-size: 13px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 300;
+}
+.familySte > span {
+  display: block;
+  padding: 4px 10px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.familySte .fmenu {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 26px;
+  left: 0;
+  width: 100%;
+}
+.familySte .fmenu a {
+  padding: 4px 0;
+}
+.toTop a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 60px;
+  height: 60px;
+
+  background-image: url(../images/f/off.png);
+  text-indent: -9999px;
+}
