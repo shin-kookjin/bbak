@@ -13,3 +13,5 @@
 7. vsCode 에서 스테이징 -> commit -> 푸시하면 gitHub.com 에서도 반영됨.
 8. gitHub.com > repositoty 선택> setting > pages > 소스는 main, Save
 9. URL 만들어지면 5분 후 확인 (좀 늦음)
+
+ https://shin-kookjin.github.io/bbak/ 
