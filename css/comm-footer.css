@@ -1,13 +1,14 @@
 #ft {
   border-top: 3px solid #ffe600;
-  padding-top: 24px;
+  padding: 24px 0;
   margin-top: 90px;
 
   text-align: center;
   font-size: 15px;
   font-weight: 200;
 }
-#ft .logo img {
+#ft .logo {
+  display: inline-block;
   width: 183px;
   margin-bottom: 30px;
 }

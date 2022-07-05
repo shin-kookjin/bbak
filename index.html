@@ -15,6 +15,19 @@
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+      .swiper-pagination-bullet-active {
+        background-color: #ffe600;
+      }
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+      }
+      .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+      .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 10px;
+      }
+    </style>
   </head>
   <body>
     <div id="wrap">
@@ -107,9 +120,9 @@
         <div class="con1">
           <div class="inner">
             <div class="tit">
-              <p class="titl_3">The Finest Quality Coffee Plants</p>
+              <p class="tit_3">The Finest Quality Coffee Plants</p>
               <h2 class="tit_1">PAIK’S COFFEE STORY</h2>
-              <p class="tit_3">균형잡힌 바디감으로 긴여운을 남기는 빽다방 커피를 만나보세요.</p>
+              <p class="tit_4">균형잡힌 바디감으로 긴여운을 남기는 빽다방 커피를 만나보세요.</p>
             </div>
             <a href="#" class="tolink">
               <span>링크</span>
@@ -119,7 +132,7 @@
         <div class="con2">
           <div class="inner">
             <div class="tit">
-              <p class="tit_1">FRESH <br />COFFEE</p>
+              <p class="tit_1 uline">FRESH <br />COFFEE</p>
               <p class="tit_2">
                 신선한 뉴크롭 원두를 사용하여<br />
                 추출한 커피메뉴!
@@ -132,28 +145,32 @@
         </div>
         <div class="con3">
           <div class="col6">
-            <div class="tit">
-              <p class="tit_1">VARIOUS <br />BEVERAGE</p>
-              <p class="tit_2">
-                에이드, 티, 주스 등 취향대로 <br />
-                골라 먹는 즐거움!
-              </p>
+            <div class="inner">
+              <div class="tit">
+                <p class="tit_1 uline">VARIOUS <br />BEVERAGE</p>
+                <p class="tit_2">
+                  에이드, 티, 주스 등 취향대로 <br />
+                  골라 먹는 즐거움!
+                </p>
+              </div>
+              <a href="#" class="tolink">
+                <span>링크</span>
+              </a>
             </div>
-            <a href="#" class="tolink">
-              <span>링크</span>
-            </a>
           </div>
           <div class="col4">
-            <div class="tit">
-              <p class="tit_1">SWEET <br />PAIK'S CCINO</p>
-              <p class="tit_2">
-                달콤 시원한 빽다방 <br />
-                시그니처 메뉴!
-              </p>
+            <div class="inner">
+              <div class="tit">
+                <p class="tit_1 uline">SWEET <br />PAIK'S CCINO</p>
+                <p class="tit_2">
+                  달콤 시원한 빽다방 <br />
+                  시그니처 메뉴!
+                </p>
+              </div>
+              <a href="#" class="tolink">
+                <span>링크</span>
+              </a>
             </div>
-            <a href="#" class="tolink">
-              <span>링크</span>
-            </a>
           </div>
         </div>
         <div class="con4">
@@ -170,31 +187,34 @@
             <div class="contact2">
               <h3>FRANCHISE</h3>
               <p>빽다방 창업안내를 도와드리겠습니다.</p>
-              <a href="#" class="tolink newstore">
+
+              <a href="#" class="tolink">
                 <span>링크</span>
               </a>
             </div>
           </div>
           <div class="col6">
-            <div class="tit">
-              <p class="tit_1">
-                TASTY <br />ICE CREAM / <br />
-                DESSERT
-              </p>
-              <p class="tit_2">
-                달콤한 아이스크림부터 <br />
-                든든한 브레드 까지!
-              </p>
+            <div class="inner">
+              <div class="tit">
+                <p class="tit_1 uline">
+                  TASTY <br />ICE CREAM / <br />
+                  DESSERT
+                </p>
+                <p class="tit_2">
+                  달콤한 아이스크림부터 <br />
+                  든든한 브레드 까지!
+                </p>
+              </div>
+              <a href="#" class="tolink">
+                <span>링크</span>
+              </a>
             </div>
-            <a href="#" class="tolink">
-              <span>링크</span>
-            </a>
           </div>
         </div>
         <div class="con5">
           <div class="inner">
             <p class="tit">PAIK’S COFFEE SNS</p>
-            <p class="hash">#빽다방#빽다방신메뉴#빽다방이벤트</p>
+            <p class="hash uline">#빽다방#빽다방신메뉴#빽다방이벤트</p>
             <ul class="sns">
               <li><a href="#" class="sns_f">페이스북</a></li>
               <li><a href="#" class="sns_i">인스타그램</a></li>
@@ -248,8 +268,12 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 3000,
+        },
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
       });
     </script>

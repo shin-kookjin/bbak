@@ -1,3 +1,239 @@
 .visual {
   background-color: #99cdf1;
 }
+#sec > div {
+  background-size: cover;
+  margin-bottom: 6px;
+  display: flex;
+  padding-top: 82px;
+  padding-bottom: 50px;
+}
+#sec > div p {
+  line-height: 1.4;
+}
+#sec > div .tit_3 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 14px;
+}
+#sec > div .tit_4 {
+  font-size: 15px;
+  font-weight: 700;
+  padding-bottom: 70px;
+}
+#sec > div .tit_2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+#sec > div .tit_1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: #071f60;
+  padding-bottom: 16px;
+  line-height: 1.15;
+}
+#sec > div .inner {
+  position: relative;
+  height: 100%;
+}
+#sec > div .tolink {
+  position: absolute;
+  bottom: -10px;
+  left: 14px;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-indent: -9999px;
+}
+#sec > div .tolink span::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#sec > div .tolink span::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#sec .con1 {
+  background-image: url(../images/m_s/main_sec1.jpg);
+  padding: 28px 0;
+  line-height: 1;
+}
+#sec .con2 {
+  background-image: url(../images/m_s/main_sec2.jpg);
+  height: 600px;
+}
+#sec .con2 .tit_1 {
+  color: #6b4d30;
+}
+#sec .con3 {
+  height: 600px;
+  padding: 0;
+}
+#sec .con3 .inner {
+  /* display: inline-block;
+  width: auto; */
+  width: 350px;
+}
+#sec .con3 .col6 {
+  background-image: url(../images/m_s/main_sec3.jpg);
+  width: calc(60% - 10px);
+  position: relative;
+  padding-top: 82px;
+  padding-bottom: 50px;
+  margin-right: 10px;
+}
+#sec .con3 .col6 .inner {
+  margin-right: 380px;
+}
+#sec .con3 .col4 {
+  background-image: url(../images/m_s/main_sec4.jpg);
+  width: 40%;
+  position: relative;
+  padding-top: 82px;
+  padding-bottom: 50px;
+}
+#sec .con3 .col4 .inner {
+  margin-left: 30px;
+}
+#sec .con3 .col4 .tit_1 {
+  color: #f1ae1d;
+}
+#sec .con4 {
+  height: 600px;
+  padding: 0;
+}
+#sec .con4 .inner {
+  width: 350px;
+  margin-left: 30px;
+}
+
+#sec .con4 .col4 > div {
+  width: 480px;
+  border: 2px solid #071f60;
+  margin-left: auto;
+  padding: 40px;
+  height: 295px;
+  margin-bottom: 10px;
+}
+#sec .con4 .col4 > div h3 {
+  font-weight: 900;
+  color: #071f60;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+#sec .con4 .col4 > div p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.contact1 form {
+  width: 328px;
+  position: relative;
+  margin-top: 90px;
+}
+.contact1 form input {
+  width: 100%;
+  border: 2px solid #071f60;
+  padding: 10px 34px 10px 10px;
+}
+.contact1 form button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 24px;
+  height: 24px;
+  text-indent: -9999px;
+
+  background-image: url(../images/m_s/검색.png);
+  background-size: contain;
+}
+.contact2 {
+  position: relative;
+  background-image: url(../images/m_s/main_sec6.png);
+  background-size: 50%;
+
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+#sec > div .contact2 .tolink {
+  bottom: 50px;
+  left: 40px;
+  background-image: url(../images/m_s/store-ico.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#sec > div .contact2 .tolink span::before,
+#sec > div .contact2 .tolink span::after {
+  display: none;
+}
+#sec .con4 .col4 {
+  width: calc(40% - 10px);
+  margin-right: 10px;
+}
+#sec .con4 .col6 {
+  background-image: url(../images/m_s/main_sec5.jpg);
+  background-size: cover;
+  width: 60%;
+  position: relative;
+  color: #fff;
+  padding-top: 82px;
+  padding-bottom: 50px;
+}
+#sec .con4 .col6 .tit_1 {
+  color: #fff;
+}
+
+#sec .con5 {
+  height: 325px;
+  padding: 0;
+  text-align: center;
+}
+#sec .con5 .tit {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 24px;
+  padding-top: 68px;
+}
+#sec .con5 .hash {
+  font-size: 15px;
+  color: #999;
+}
+
+#sec .con5 .sns {
+  justify-content: center;
+}
+
+#sec .con5 .sns a {
+  width: 30px;
+  height: 30px;
+}
+
+#sec .con2 .uline::after {
+  background-color: #7f5b39;
+}
+#sec .col4 .uline::after {
+  background-color: #f1ae1d;
+}
+#sec .con4 .uline::after {
+  background-color: #fff;
+}
+#sec .con5 .uline::after {
+  margin: 30px auto;
+}
