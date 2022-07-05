@@ -1,9 +1,9 @@
 .visual {
   height: 500px;
   text-align: center;
-
-  background-image: url(../images/ceo/bg-about.jpg);
+  background-color: #eee;
   background-size: cover;
+  background-position: center;
 }
 .visual h2 {
   padding-top: 150px;
