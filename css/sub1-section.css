@@ -1,3 +1,26 @@
 .visual {
   background-image: url(../images/ceo/bg-about.jpg);
 }
+
+#sec h3 {
+  color: #071f60;
+  font-size: 34px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0;
+}
+#sec h4 {
+  font-size: 50px;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#intro1 {
+}
+#intro2 {
+  display: none;
+}
+#intro3 {
+  display: none;
+}
