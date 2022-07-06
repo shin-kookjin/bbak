@@ -4,6 +4,8 @@
 
 * {
   box-sizing: border-box;
+  color: inherit;
+  user-select: none;
 }
 .hide {
   position: absolute;

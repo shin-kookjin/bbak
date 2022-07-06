@@ -1,3 +1,41 @@
 .visual {
   background-image: url(../images/class/bg-class.jpg);
 }
+#sec .classList {
+  padding-top: 67px;
+}
+#sec .classList li a {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+#sec .classList li:hover a {
+  border: 1px solid #071f60;
+  color: #071f60;
+}
+#sec .classList .c_imgBox {
+  border-right: 1px solid #ccc;
+  line-height: 0;
+}
+#sec .classList .c_descBox {
+  flex: 1;
+  padding-left: 50px;
+}
+#sec .classList .c_bage {
+  background-color: #333;
+  color: #ccc;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 999px;
+}
+#sec .classList .c_tit {
+  padding: 14px 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+#sec .classList .c_date {
+  font-weight: 400;
+}

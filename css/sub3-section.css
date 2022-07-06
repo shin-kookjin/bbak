@@ -40,29 +40,3 @@
   color: #fff;
   font-weight: 500;
 }
-#sec .boards .pages {
-  padding-top: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#sec .boards .pages a {
-  padding: 10px;
-  color: #ccc;
-}
-#sec .boards .pages a.act,
-#sec .boards .pages a:hover {
-  color: #071f60;
-  font-weight: 500;
-}
-#sec .boards .pages .next {
-  border: 1px solid #ccc;
-  width: 24px;
-  height: 24px;
-  text-indent: -9999px;
-  background-image: url(../images/news/board-arr.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 30%;
-  margin: 10px;
-}

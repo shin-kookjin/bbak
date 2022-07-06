@@ -47,3 +47,30 @@
   background-color: #ffe600;
   color: #111;
 }
+
+#sec .pages {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sec .pages a {
+  padding: 10px;
+  color: #ccc;
+}
+#sec .pages a.act,
+#sec .pages a:hover {
+  color: #071f60;
+  font-weight: 500;
+}
+#sec .pages .next {
+  border: 1px solid #ccc;
+  width: 24px;
+  height: 24px;
+  text-indent: -9999px;
+  background-image: url(../images/news/board-arr.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  margin: 10px;
+}
