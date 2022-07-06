@@ -13,6 +13,9 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/comm.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
   <body>
     <div id="wrap">
@@ -85,18 +88,80 @@
 
       <div class="visual">
         <div class="inner">
-          <h2 class="uline">센메뉴</h2>
+          <h2 class="uline">신메뉴</h2>
           <p>지금 바로 가까운 매장에서 빽다방 신메뉴를 만나 보실 수 있습니다.</p>
-          <ul>
-            <li><a href="#intro1" class="active">신메뉴</a></li>
-            <li><a href="#intro2">커피</a></li>
-            <li><a href="#intro3">음료</a></li>
-            <li><a href="#intro4">아이스크림/디저트</a></li>
-            <li><a href="#intro5">빽스치노</a></li>
+          <ul class="tabmenu">
+            <li><a href="#menu_new" class="active">신메뉴</a></li>
+            <li><a href="#menu_coff">커피</a></li>
+            <li><a href="#menu_drink">음료</a></li>
+            <li><a href="#menu_desert">아이스크림/디저트</a></li>
+            <li><a href="#menu_bbak">빽스치노</a></li>
           </ul>
         </div>
       </div>
-      <section id="sec"></section>
+      <section id="sec">
+        <h3 class="hide">전체메뉴</h3>
+
+        <div class="inner">
+          <div class="tabcont" id="menu_new">
+            <div class="addnew">
+              <h3>코코넛 2종</h3>
+              <iframe title="vimeo-player" src="https://player.vimeo.com/video/725543325?h=32b0aee059" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <h4 class="uline">신메뉴</h4>
+            <div class="slide">
+              <!-- Swiper -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="cont">
+                      <img src="images/newitem/coconut_1.png" alt="코코넛카페라떼" />
+                      <p>코코넛카페라떼<span>(HOT)</span></p>
+                      <span class="bage">BEST</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="cont">
+                      <img src="images/newitem/cocunut_2.png" alt="코코넛카페라떼" />
+                      <p>코코넛카페라떼<span>(ICED)</span></p>
+                      <span class="bage">BEST</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="cont">
+                      <img src="images/newitem/cucunt_3.png" alt="코코넛커피무스" />
+                      <p>코코넛커피무스<span>(ICED)</spa></p>
+                      <span class="bage">BEST</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="cont">
+                      <img src="images/newitem/coconut_1.png" alt="코코넛카페라떼" />
+                      <p>코코넛카페라떼(HOT)</p>
+                      <span class="bage">BEST</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tabcont" id="menu_coff">
+            <h4 class="uline">커피 추천메뉴 준비중</h4>
+          </div>
+          <div class="tabcont" id="menu_drink">
+            <h4 class="uline">음료 추천메뉴 준비중</h4>
+          </div>
+          <div class="tabcont" id="menu_desert">
+            <h4 class="uline">디저트 추천메뉴 준비중</h4>
+          </div>
+          <div class="tabcont" id="menu_bbak">
+            <h4 class="uline">빽스치노 추천메뉴 준비중</h4>
+          </div>
+        </div>
+      </section>
 
       <footer id="ft">
         <div class="inner">
@@ -136,5 +201,24 @@
         </div>
       </footer>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

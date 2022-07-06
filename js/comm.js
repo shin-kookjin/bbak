@@ -24,4 +24,16 @@ $(function () {
     $("html,body").animate({ scrollTop: 0 });
     return false;
   });
+
+  //서브 비주얼 영역 탭메뉴
+  $(".visual a").click(function () {
+    $(".visual a").removeClass("active");
+    $(this).addClass("active");
+
+    var thisParentIndex = $(this).parent("li").index();
+    $("#sec .tabcont").hide();
+    $("#sec .tabcont").eq(thisParentIndex).show();
+
+    return false;
+  });
 });

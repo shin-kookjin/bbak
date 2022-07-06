@@ -1,3 +1,58 @@
 .visual {
   background-image: url(../images/newitem/bg-menu.jpg);
 }
+#sec .addnew {
+  padding-top: 93px;
+}
+#sec .addnew h3 {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 20px;
+}
+#sec .addnew iframe {
+  display: block;
+  margin: auto;
+}
+
+#sec .tabcont {
+  display: none;
+}
+#sec #menu_new {
+  display: block;
+}
+#sec h4 {
+  text-align: center;
+  margin: 40px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #071f60;
+}
+#sec h4::after {
+  margin: 20px auto;
+}
+#sec .cont {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+#sec .cont p span {
+  font-weight: 100;
+}
+#sec .cont .bage {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: #071f60;
+  border-radius: 999px;
+  color: #ffe600;
+  line-height: 70px;
+
+  position: absolute;
+  top: 60px;
+  right: 10px;
+}
+#sec .swiper-pagination {
+  bottom: 0;
+}
