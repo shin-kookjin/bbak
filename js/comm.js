@@ -27,13 +27,28 @@ $(function () {
 
   //서브 비주얼 영역 탭메뉴
   $(".visual a").click(function () {
+    //탭 스타일
     $(".visual a").removeClass("active");
     $(this).addClass("active");
 
+    //탭에 따라 show/hide
     var thisParentIndex = $(this).parent("li").index();
     $("#sec .tabcont").hide();
     $("#sec .tabcont").eq(thisParentIndex).show();
 
+    //탭의 텍스트에 따라 필터하여 show/hide
+    var thisText = $(this).text();
+    if ($(this).parents("ul").hasClass("filter")) {
+      $(".boards  tbody tr").filter(function () {
+        if (thisText == "전체보기") {
+          $(".boards  tbody tr").show();
+        } else {
+          $(this).toggle($(this).text().indexOf(thisText) > -1);
+        }
+      });
+    }
+
+    //a 의 기본 기능인 링크 기능 방지
     return false;
   });
 });
