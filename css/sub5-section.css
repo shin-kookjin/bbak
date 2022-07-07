@@ -1,3 +1,185 @@
 .visual {
   background-image: url(../images/store/store-bg.jpg);
 }
+
+#sec .searchForm {
+  margin-top: 64px;
+  border: 1px solid #eee;
+  padding: 20px;
+
+  display: flex;
+}
+#sec .searchForm p {
+  flex: 1;
+}
+#sec .searchForm .seacrch2 {
+  position: relative;
+  text-align: right;
+}
+#sec .searchForm label {
+  font-weight: 500;
+  font-size: 14px;
+
+  display: inline-block;
+  margin: 10px 30px 10px 10px;
+}
+#sec .searchForm select {
+  border: 1px solid #eee;
+  width: 145px;
+  height: 42px;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+#sec .searchForm input {
+  border: 1px solid #eee;
+  width: 400px;
+  height: 42px;
+  padding: 0 50px 0 10px;
+}
+#sec .searchForm button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-indent: -9999px;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url(../images/store/search-ico.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+#sec .storeList {
+  padding-top: 100px;
+}
+#sec .storeList .result {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+}
+#sec .storeList .result span {
+  color: #071f60;
+}
+#sec .boards {
+  padding-top: 64px;
+}
+#sec .boards table {
+  width: 100%;
+  border-top: 2px solid #071f60;
+}
+#sec .boards table th:nth-child(1) {
+  width: 10%;
+}
+#sec .boards table th:nth-child(2) {
+  width: 15%;
+}
+#sec .boards table th:nth-child(3) {
+  width: 55%;
+}
+#sec .boards table th:nth-child(4) {
+  width: 15%;
+}
+#sec .boards table th:nth-child(5) {
+  width: 5%;
+  text-indent: -9999px;
+}
+
+#sec .boards th {
+  color: #071f60;
+  font-weight: 600;
+  padding: 15px 2px;
+  border-bottom: 1px solid #ccc;
+}
+#sec .boards .list td {
+  text-align: center;
+  color: #333;
+
+  border-bottom: 1px solid #ccc;
+  padding: 20px 4px;
+}
+#sec .boards .s_name {
+  color: #111;
+  font-weight: 400;
+}
+#sec .boards tbody tr.list.act td {
+  background-color: #071f60;
+  color: #fff;
+  font-weight: 500;
+}
+#sec .boards .list {
+  cursor: pointer;
+}
+
+#sec .boards .list .s_detail {
+  position: relative;
+}
+#sec .boards .list .s_detail::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: "";
+  display: block;
+  width: 14px;
+  height: 1px;
+  background-color: #071f60;
+}
+#sec .boards .list .s_detail::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -50%);
+  content: "";
+  display: block;
+  width: 1px;
+  height: 14px;
+  background-color: #071f60;
+}
+#sec .boards .list.on td {
+  background-color: #071f60;
+  color: #fff;
+}
+#sec .boards .list.on .s_detail::before {
+  background-color: #fff;
+}
+#sec .boards .list.on .s_detail::after {
+  display: none;
+}
+#sec .boards .list.on + tr .detail {
+  display: table-cell;
+}
+#sec .boards .detail {
+  display: none;
+
+  background-color: #f8f8f8;
+  padding: 34px 32px;
+}
+#sec .boards .detail .cont {
+  display: flex;
+  align-items: center;
+}
+#sec .boards .detail .thum {
+  width: 530px;
+}
+#sec .boards .detail .infor {
+  flex: 1;
+  text-align-last: left;
+  padding-left: 50px;
+}
+#sec .boards .detail .infor p {
+  padding: 15px 0;
+}
+#sec .boards .detail .infor p span {
+  display: inline-block;
+}
+#sec .boards .detail .infor p .tit {
+  color: #071f60;
+  font-weight: 500;
+  width: 100px;
+}
+#sec .boards .detail .infor p .txt {
+  color: #555;
+}

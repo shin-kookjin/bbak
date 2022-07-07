@@ -91,23 +91,499 @@
       </div>
 
       <section id="sec">
-        <h3 class="hide">전체메뉴</h3>
+        <h3 class="hide">전체 매장</h3>
         <div class="inner">
-          <div class="tabcont" id="menu_new">
-            <h4>신메뉴</h4>
-            <div class="slide"></div>
+          <div class="searchForm">
+            <p class="seacrch1">
+              <label for="sido">지역검색</label>
+              <select name="sido" id="sido">
+                <option value="">전체</option>
+                <option value="18">서울특별시</option>
+                <option value="19">경기도</option>
+                <option value="32">인천광역시</option>
+                <option value="20">대전광역시</option>
+                <option value="21">충청북도</option>
+                <option value="26">충청남도</option>
+                <option value="22">강원도</option>
+                <option value="23">경상북도</option>
+                <option value="24">경상남도</option>
+                <option value="25">제주도</option>
+                <option value="27">울산광역시</option>
+                <option value="28">부산광역시</option>
+                <option value="29">광주광역시</option>
+                <option value="31">전라북도</option>
+                <option value="30">전라남도</option>
+                <option value="33">대구광역시</option>
+                <option value="34">세종특별자치시</option>
+              </select>
+              <label for="gugun" class="hide">구군검색</label>
+              <select name="gugun" id="gugun">
+                <option value="">전체</option>
+              </select>
+            </p>
+            <p class="seacrch2">
+              <label for="storename">매장명 검색</label>
+              <input type="text" id="storename" />
+              <button class="btn_search">검색</button>
+            </p>
           </div>
-          <div class="tabcont" id="menu_coff">
-            <h4>커피 추천메뉴 준비중</h4>
-          </div>
-          <div class="tabcont" id="menu_drink">
-            <h4>음료 추천메뉴 준비중</h4>
-          </div>
-          <div class="tabcont" id="menu_desert">
-            <h4>디저트 추천메뉴 준비중</h4>
-          </div>
-          <div class="tabcont" id="menu_bbak">
-            <h4>빽스치노 추천메뉴 준비중</h4>
+          <div class="storeList">
+            <p class="result">총 <span>1103</span>개의 매장이 있습니다.</p>
+            <div class="boards">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="s_loc">지역</th>
+                    <th class="s_name">매장명</th>
+                    <th class="s_add">주소</th>
+                    <th class="s_tel">전화번호</th>
+                    <th class="s_detail">자세히보기</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr class="list">
+                    <td class="s_loc">경기도</td>
+                    <td class="s_name">동탄역시범단지점</td>
+                    <td class="s_add">경기도 화성시 청계동 514-2 서진프라자 105호</td>
+                    <td class="s_tel">070-4566-2995</td>
+                    <td class="s_detail"><span class="hide">자세히보기</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="detail">
+                      <div class="cont">
+                        <div class="thum">
+                          <img src="images/store/20220624_023321.jpg" alt="전경사진" />
+                        </div>
+                        <div class="infor">
+                          <p>
+                            <span class="tit">위치</span>
+                            <span class="txt">경기도 화성시 청계동 514-2 서진프라자 105호</span>
+                          </p>
+                          <p>
+                            <span class="tit">영업시간</span>
+                            <span class="txt">08:00 ~ 21:00</span>
+                          </p>
+                          <p>
+                            <span class="tit">주차</span>
+                            <span class="txt">불가</span>
+                          </p>
+                          <p>
+                            <span class="tit">전화번호</span>
+                            <span class="txt">070-4566-2995</span>
+                          </p>
+                          <p>
+                            <span class="tit">휴일</span>
+                            <span class="txt">연중무휴</span>
+                          </p>
+                          <p>
+                            <span class="tit">좌석</span>
+                            <span class="txt">테이블 5개 / 10좌석 </span>
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="list">
+                    <td class="s_loc">서울특별시</td>
+                    <td class="s_name">강서구청점</td>
+                    <td class="s_add">서울특별시 강서구 화곡로 318-1, 1층</td>
+                    <td class="s_tel">070-4333-0404</td>
+                    <td class="s_detail"><span class="hide">자세히보기</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="detail">
+                      <div class="cont">
+                        <div class="thum">
+                          <img src="images/store/20220624_023321.jpg" alt="전경사진" />
+                        </div>
+                        <div class="infor">
+                          <p>
+                            <span class="tit">위치</span>
+                            <span class="txt">경기도 화성시 청계동 514-2 서진프라자 105호</span>
+                          </p>
+                          <p>
+                            <span class="tit">영업시간</span>
+                            <span class="txt">08:00 ~ 21:00</span>
+                          </p>
+                          <p>
+                            <span class="tit">주차</span>
+                            <span class="txt">불가</span>
+                          </p>
+                          <p>
+                            <span class="tit">전화번호</span>
+                            <span class="txt">070-4566-2995</span>
+                          </p>
+                          <p>
+                            <span class="tit">휴일</span>
+                            <span class="txt">연중무휴</span>
+                          </p>
+                          <p>
+                            <span class="tit">좌석</span>
+                            <span class="txt">테이블 5개 / 10좌석 </span>
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="list">
+                    <td class="s_loc">서울특별시</td>
+                    <td class="s_name">목동8단지점</td>
+                    <td class="s_add">서울 양천구 신정동 318-5 1층</td>
+                    <td class="s_tel">070-4566-2995</td>
+                    <td class="s_detail"><span class="hide">자세히보기</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="detail">
+                      <div class="cont">
+                        <div class="thum">
+                          <img src="images/store/20220624_023321.jpg" alt="전경사진" />
+                        </div>
+                        <div class="infor">
+                          <p>
+                            <span class="tit">위치</span>
+                            <span class="txt">경기도 화성시 청계동 514-2 서진프라자 105호</span>
+                          </p>
+                          <p>
+                            <span class="tit">영업시간</span>
+                            <span class="txt">08:00 ~ 21:00</span>
+                          </p>
+                          <p>
+                            <span class="tit">주차</span>
+                            <span class="txt">불가</span>
+                          </p>
+                          <p>
+                            <span class="tit">전화번호</span>
+                            <span class="txt">070-4566-2995</span>
+                          </p>
+                          <p>
+                            <span class="tit">휴일</span>
+                            <span class="txt">연중무휴</span>
+                          </p>
+                          <p>
+                            <span class="tit">좌석</span>
+                            <span class="txt">테이블 5개 / 10좌석 </span>
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="list">
+                    <td class="s_loc">서울특별시</td>
+                    <td class="s_name">길음롯데클라시아점</td>
+                    <td class="s_add">서울 성북구 길음동 508-16 롯데캐슬클라시아 상가동 117호</td>
+                    <td class="s_tel">070-4566-2995</td>
+                    <td class="s_detail"><span class="hide">자세히보기</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="detail">
+                      <div class="cont">
+                        <div class="thum">
+                          <img src="images/store/20220624_023321.jpg" alt="전경사진" />
+                        </div>
+                        <div class="infor">
+                          <p>
+                            <span class="tit">위치</span>
+                            <span class="txt">경기도 화성시 청계동 514-2 서진프라자 105호</span>
+                          </p>
+                          <p>
+                            <span class="tit">영업시간</span>
+                            <span class="txt">08:00 ~ 21:00</span>
+                          </p>
+                          <p>
+                            <span class="tit">주차</span>
+                            <span class="txt">불가</span>
+                          </p>
+                          <p>
+                            <span class="tit">전화번호</span>
+                            <span class="txt">070-4566-2995</span>
+                          </p>
+                          <p>
+                            <span class="tit">휴일</span>
+                            <span class="txt">연중무휴</span>
+                          </p>
+                          <p>
+                            <span class="tit">좌석</span>
+                            <span class="txt">테이블 5개 / 10좌석 </span>
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="list">
+                    <td class="s_loc">제주도</td>
+                    <td class="s_name">서귀포성읍마을점</td>
+                    <td class="s_add">제주특별자치도 서귀포시 표선면 성읍리 987-3 1층</td>
+                    <td class="s_tel">미등록</td>
+                    <td class="s_detail"><span class="hide">자세히보기</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="detail">
+                      <div class="cont">
+                        <div class="thum">
+                          <img src="images/store/20220624_023321.jpg" alt="전경사진" />
+                        </div>
+                        <div class="infor">
+                          <p>
+                            <span class="tit">위치</span>
+                            <span class="txt">경기도 화성시 청계동 514-2 서진프라자 105호</span>
+                          </p>
+                          <p>
+                            <span class="tit">영업시간</span>
+                            <span class="txt">08:00 ~ 21:00</span>
+                          </p>
+                          <p>
+                            <span class="tit">주차</span>
+                            <span class="txt">불가</span>
+                          </p>
+                          <p>
+                            <span class="tit">전화번호</span>
+                            <span class="txt">070-4566-2995</span>
+                          </p>
+                          <p>
+                            <span class="tit">휴일</span>
+                            <span class="txt">연중무휴</span>
+                          </p>
+                          <p>
+                            <span class="tit">좌석</span>
+                            <span class="txt">테이블 5개 / 10좌석 </span>
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="list">
+                    <td class="s_loc">서울특별시</td>
+                    <td class="s_name">숙대입구역점</td>
+                    <td class="s_add">서울 용산구 갈월동 90-10</td>
+                    <td class="s_tel">02-712-0094</td>
+                    <td class="s_detail"><span class="hide">자세히보기</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="detail">
+                      <div class="cont">
+                        <div class="thum">
+                          <img src="images/store/20220624_023321.jpg" alt="전경사진" />
+                        </div>
+                        <div class="infor">
+                          <p>
+                            <span class="tit">위치</span>
+                            <span class="txt">경기도 화성시 청계동 514-2 서진프라자 105호</span>
+                          </p>
+                          <p>
+                            <span class="tit">영업시간</span>
+                            <span class="txt">08:00 ~ 21:00</span>
+                          </p>
+                          <p>
+                            <span class="tit">주차</span>
+                            <span class="txt">불가</span>
+                          </p>
+                          <p>
+                            <span class="tit">전화번호</span>
+                            <span class="txt">070-4566-2995</span>
+                          </p>
+                          <p>
+                            <span class="tit">휴일</span>
+                            <span class="txt">연중무휴</span>
+                          </p>
+                          <p>
+                            <span class="tit">좌석</span>
+                            <span class="txt">테이블 5개 / 10좌석 </span>
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="list">
+                    <td class="s_loc">충청남도</td>
+                    <td class="s_name">아산탕정역점</td>
+                    <td class="s_add">충남 아산시 탕정면 한들물빛도시로 70, 109호</td>
+                    <td class="s_tel">041-424-0400</td>
+                    <td class="s_detail"><span class="hide">자세히보기</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="detail">
+                      <div class="cont">
+                        <div class="thum">
+                          <img src="images/store/20220624_023321.jpg" alt="전경사진" />
+                        </div>
+                        <div class="infor">
+                          <p>
+                            <span class="tit">위치</span>
+                            <span class="txt">경기도 화성시 청계동 514-2 서진프라자 105호</span>
+                          </p>
+                          <p>
+                            <span class="tit">영업시간</span>
+                            <span class="txt">08:00 ~ 21:00</span>
+                          </p>
+                          <p>
+                            <span class="tit">주차</span>
+                            <span class="txt">불가</span>
+                          </p>
+                          <p>
+                            <span class="tit">전화번호</span>
+                            <span class="txt">070-4566-2995</span>
+                          </p>
+                          <p>
+                            <span class="tit">휴일</span>
+                            <span class="txt">연중무휴</span>
+                          </p>
+                          <p>
+                            <span class="tit">좌석</span>
+                            <span class="txt">테이블 5개 / 10좌석 </span>
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="list">
+                    <td class="s_loc">경기도</td>
+                    <td class="s_name">성남도촌점</td>
+                    <td class="s_add">경기 성남시 중원구 도촌남로 27 (도촌동 566, 114호)</td>
+                    <td class="s_tel">070-4027-4334</td>
+                    <td class="s_detail"><span class="hide">자세히보기</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="detail">
+                      <div class="cont">
+                        <div class="thum">
+                          <img src="images/store/20220624_023321.jpg" alt="전경사진" />
+                        </div>
+                        <div class="infor">
+                          <p>
+                            <span class="tit">위치</span>
+                            <span class="txt">경기도 화성시 청계동 514-2 서진프라자 105호</span>
+                          </p>
+                          <p>
+                            <span class="tit">영업시간</span>
+                            <span class="txt">08:00 ~ 21:00</span>
+                          </p>
+                          <p>
+                            <span class="tit">주차</span>
+                            <span class="txt">불가</span>
+                          </p>
+                          <p>
+                            <span class="tit">전화번호</span>
+                            <span class="txt">070-4566-2995</span>
+                          </p>
+                          <p>
+                            <span class="tit">휴일</span>
+                            <span class="txt">연중무휴</span>
+                          </p>
+                          <p>
+                            <span class="tit">좌석</span>
+                            <span class="txt">테이블 5개 / 10좌석 </span>
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="list">
+                    <td class="s_loc">서울특별시</td>
+                    <td class="s_name">목동41타워점</td>
+                    <td class="s_add">서울시 양천구 목동동로 293, 현대41타워 1층 제1-10호</td>
+                    <td class="s_tel">02-2644-7140</td>
+                    <td class="s_detail"><span class="hide">자세히보기</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="detail">
+                      <div class="cont">
+                        <div class="thum">
+                          <img src="images/store/20220624_023321.jpg" alt="전경사진" />
+                        </div>
+                        <div class="infor">
+                          <p>
+                            <span class="tit">위치</span>
+                            <span class="txt">경기도 화성시 청계동 514-2 서진프라자 105호</span>
+                          </p>
+                          <p>
+                            <span class="tit">영업시간</span>
+                            <span class="txt">08:00 ~ 21:00</span>
+                          </p>
+                          <p>
+                            <span class="tit">주차</span>
+                            <span class="txt">불가</span>
+                          </p>
+                          <p>
+                            <span class="tit">전화번호</span>
+                            <span class="txt">070-4566-2995</span>
+                          </p>
+                          <p>
+                            <span class="tit">휴일</span>
+                            <span class="txt">연중무휴</span>
+                          </p>
+                          <p>
+                            <span class="tit">좌석</span>
+                            <span class="txt">테이블 5개 / 10좌석 </span>
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="list">
+                    <td class="s_loc">제주도</td>
+                    <td class="s_name">제주합동청사점</td>
+                    <td class="s_add">제주도 제주시 도남동 663-12</td>
+                    <td class="s_tel">064-722-3334</td>
+                    <td class="s_detail"><span class="hide">자세히보기</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="detail">
+                      <div class="cont">
+                        <div class="thum">
+                          <img src="images/store/20220624_023321.jpg" alt="전경사진" />
+                        </div>
+                        <div class="infor">
+                          <p>
+                            <span class="tit">위치</span>
+                            <span class="txt">경기도 화성시 청계동 514-2 서진프라자 105호</span>
+                          </p>
+                          <p>
+                            <span class="tit">영업시간</span>
+                            <span class="txt">08:00 ~ 21:00</span>
+                          </p>
+                          <p>
+                            <span class="tit">주차</span>
+                            <span class="txt">불가</span>
+                          </p>
+                          <p>
+                            <span class="tit">전화번호</span>
+                            <span class="txt">070-4566-2995</span>
+                          </p>
+                          <p>
+                            <span class="tit">휴일</span>
+                            <span class="txt">연중무휴</span>
+                          </p>
+                          <p>
+                            <span class="tit">좌석</span>
+                            <span class="txt">테이블 5개 / 10좌석 </span>
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="pages">
+                <a href="#p1" class="act">1</a>
+                <a href="#p2">2</a>
+                <a href="#p3">3</a>
+                <a href="#p4">4</a>
+                <a href="#p5">5</a>
+
+                <button class="next">다음페이지</button>
+              </p>
+            </div>
           </div>
         </div>
       </section>
