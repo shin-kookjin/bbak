@@ -1,26 +1,49 @@
 $(function () {
-  //헤더 메인메뉴 호버
-  $(".main>li").hover(
-    function () {
-      $(this).find(".sub").show();
-      $(".bg").stop().slideDown(300);
-      if ($(this).hasClass("nosub")) {
-        $(".bg").hide();
-      }
-    },
-    function () {
-      $(this).find(".sub").hide();
-      $(".bg").stop().slideUp(300);
-    }
-  );
+  //공통으로 사용되는 헤더, 푸터 불러오기
+  $("#hd").load("comm_header.html");
+  $("#ft").load("comm_footer.html");
 
-  //푸터 패밀리 사이트
-  $(".familySte > span").click(function () {
+  //헤더 메인메뉴 호버 수정 (동적 이벤트 바인딩)
+  $(document).on("mouseenter", ".main>li", function () {
+    $(this).find(".sub").show();
+    $(".bg").stop().slideDown(300);
+    if ($(this).hasClass("nosub")) {
+      $(".bg").hide();
+    }
+  });
+  $(document).on("mouseleave", ".main>li", function () {
+    $(this).find(".sub").hide();
+    $(".bg").stop().slideUp(300);
+  });
+
+  //헤더 서브메뉴 해시 (동적 이벤트 바인딩)
+  $(document).on("click", ".sub a", function () {
+    toHash($(this).attr("href"));
+  });
+
+  toHash(window.location.hash);
+
+  function toHash(objhef) {
+    var ishash = objhef.indexOf("#");
+    console.log(ishash);
+    var hashWord = objhef.slice(ishash);
+    console.log(hashWord);
+    if (ishash > -1) {
+      $(".visual a").removeClass("active");
+      $(".visual a[href='" + hashWord + "']").addClass("active");
+      $("#sec .tabcont").hide();
+      $("#sec .tabcont" + hashWord).show();
+      // return false;
+    }
+  }
+
+  //푸터 패밀리 사이트 수정 (동적 이벤트 바인딩)
+  $(document).on("click", ".familySte > span", function () {
     $(".familySte .fmenu").slideToggle(200);
   });
 
-  //푸터 top 클릭
-  $(".toTop a").click(function () {
+  //푸터 top 클릭 수정 (동적 이벤트 바인딩)
+  $(document).on("click", ".toTop a", function () {
     $("html,body").animate({
       scrollTop: 0,
     });
@@ -30,14 +53,14 @@ $(function () {
   //서브 비주얼 영역 탭메뉴
   $(".visual a").click(function () {
     //탭 스타일
-    $(".visual a").removeClass("active");
-    $(this).addClass("active");
+    // $(".visual a").removeClass("active");
+    // $(this).addClass("active");
 
     //탭에 따라 show/hide
-    var thisParentIndex = $(this).parent("li").index();
-    $("#sec .tabcont").hide();
-    $("#sec .tabcont").eq(thisParentIndex).show();
-
+    // var thisParentIndex = $(this).parent("li").index();
+    // $("#sec .tabcont").hide();
+    // $("#sec .tabcont").eq(thisParentIndex).show();
+    toHash($(this).attr("href"));
     //탭의 텍스트에 따라 필터하여 show/hide
     var thisText = $(this).text();
     if ($(this).parents("ul").hasClass("filter")) {
@@ -51,7 +74,7 @@ $(function () {
     }
 
     //a 의 기본 기능인 링크 기능 방지
-    return false;
+    // return false;
   });
 
   /*  
